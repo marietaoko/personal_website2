@@ -1,0 +1,966 @@
+/* === DESKTOP === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+
+   * {
+    box-sizing: border-box;
+  }
+
+  
+
+  .body1 {
+    background: rgb(230, 213, 213);
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  h5 {
+    font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7em;
+    text-align: center;
+    color: white;
+    padding: .5em;
+  }
+
+  a.title {
+    font-size: 2em;
+    padding: 3em;
+    font-family: "brevia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: all .3s ease-in-out;
+  }
+
+  a.title:hover {
+    color: black;
+    text-decoration: none;
+  }
+
+  .whole_title {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1em;
+    width: 50%;
+    padding: 2em;
+    font-family: "brevia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: all .3s ease-in-out;
+    color: white;
+    text-align: center;
+  }
+
+
+.opacity img {
+  opacity: 40%;
+}
+
+
+  .gallery {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .cards {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .cards li {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border-radius: 0.8rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards img {
+    width: 80%;
+    padding: 0;
+    transition: all .3s ease-in-out;
+  }
+
+  .cards img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .actions {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  button#gallery {
+    display:inline-block;
+    outline: none;
+    border: none;
+    padding: 1em;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 auto 10px;
+    cursor: pointer;
+    font-size: 3em;
+    line-height: 18px;
+    transition: all .3s ease-in-out;
+  }
+  
+  button#gallery:hover {
+    transform: scale(1);
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+    h1 {
+      font-size: 3em;
+      padding: 1em;
+      font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    .red_fill {
+      padding: 0 1em 1em 40em;
+      color: #ffffff;
+      font-size: .8em;
+    }
+
+    
+    #button {
+      background: none;
+      border: none;
+      font-size: 2em;
+      padding: .5em;
+      font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      color: #ffffff;
+      cursor: pointer;
+      transition: all .3s;
+    }
+
+    #button:hover {
+      color: black;
+    }
+
+    .text {
+      background: none;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: solid 1px;
+      font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: #ffffff;
+    }
+
+    #output {
+      font-size: .9em;
+      padding: 1em 4em;
+      width: 70%;
+      color: #ffffff
+    }
+
+    /* #red1{
+        width: 60%;
+        padding: 0 4em;
+        color: #8b0820;
+    } */
+
+    
+    .center {
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #red_q1{
+        /* width: 100%;
+        padding: 10em; */
+        color: #ffffff;
+        text-align: right;
+        width: 50%;
+        padding: 2em;
+    }
+
+
+    button {
+        font-size: 1.2em;
+        color: white;
+        font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        background: none;
+        border-radius: 10px;
+        border: none;
+        padding: 6px;
+        transition: all .3s;
+    }
+    
+    button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    h2 {
+      font-size: 2em;
+      padding: 1em;
+      font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    
+    #openMenu {
+        font-size: 1.3em;
+        font-family: "rollerscript-rough", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    color: #ffffff;
+        cursor: pointer;
+        position: absolute;
+        top: .5em;
+        right: 1em;
+        z-index: 9;
+        font-weight: bold;
+        transition: all .2s;
+      }
+      
+      #openMenu:hover {
+        transform: scale(1);
+        color: black;
+      }
+      
+      .overlay {
+        /* position:relative; */
+        height: 0%;
+        width: 15%;
+        position: fixed;
+        z-index: 11;
+        top: 0;
+        right: 0;
+        background-color: none;
+        overflow-x: hidden;
+        transition: all .01s;
+      }
+      
+      .overlay-content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: column wrap;
+          padding: 1em;
+      }
+      
+      .overlay a {
+        padding: 0px;
+        text-decoration: none;
+        font-size: .6em;
+        color:white;
+        font-family: "brevia", sans-serif;
+font-weight: 300;
+font-style: normal;
+        width: 100%;
+          margin-bottom: 1em;
+        /* border: 1px solid red; */
+          transition: all 0.5s;
+      }
+      
+      .overlay a:hover {
+          color:black;
+      }
+      
+      .closebtn {
+        font-family: "brevia", sans-serif;
+font-weight: 300;
+font-style: normal;
+        position: absolute;
+        z-index: 99;
+        top: 6px;
+        right: 6px;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+          outline:none;
+          border:none;
+        width: 40px;
+          height: 40px;
+        text-decoration: none;
+        color:white;
+      }
+      
+      .closebtn:hover {
+        color:rgb(128, 46, 62);
+          background: none;
+      }
+
+      .red_4 {
+        padding: 3em;
+      }
+
+      .red_4 div {
+        padding: 1em;
+      }
+
+      .red_4 button {
+        font-size: 1.3em;
+        font-family: "brevia", sans-serif;
+font-weight: 300;
+font-style: normal;
+    color: #D98282;
+      }
+
+      @media screen and (max-height: 450px) {
+        .overlay a {
+          font-size: 20px;
+        }
+      
+        .closebtn {
+          font-size: 40px !important;
+          top: 15px;
+          right: 35px;
+        }
+      }
+
+
+    @media screen and (min-width: 700px) {
+        main.wrapper {
+          flex-direction: row;
+        }
+        section {
+          min-width: 100%;
+        }
+    
+        .anim_container {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+        }
+        
+      }
+
+      
+
+
+
+ .body3 {
+   /* background-image: linear-gradient(to bottom,
+     rgba(206, 125, 120),
+     rgb(176, 89, 102),
+     rgb(113, 32, 43)
+     ); */
+   max-width: 100vw;
+   min-height: 100vh;
+   /* overflow-x: hidden; */
+   color: white;
+   /* position: relative; */
+   margin: 0;
+   overscroll-behavior: none;
+    scroll-behavior: smooth;
+    font-family: "brevia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+   
+   @media (min-width: 40em) {
+     font-size: 2rem;
+   }
+ }
+ 
+
+ .body4 {
+  /* background-image: linear-gradient(to bottom,
+  #54BAD1,
+  #1299B8,
+  #0D6F85,
+  #15515e,
+  #0a3c47
+    ); */
+  max-width: 100vw;
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+  color: white;
+  /* position: relative; */
+  margin: 0;
+  overscroll-behavior: none;
+   scroll-behavior: smooth;
+   font-family: "brevia", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+   color: white;
+  
+  @media (min-width: 40em) {
+    font-size: 2rem;
+  }
+}
+
+
+.body5 {
+  /* background-image: linear-gradient(to bottom,
+  #daac51,
+  #c89118,
+  #ac7104
+    ); */
+  max-width: 100vw;
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+  color: white;
+  /* position: relative; */
+  margin: 0;
+  overscroll-behavior: none;
+   scroll-behavior: smooth;
+   font-family: "brevia", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+   color: white;
+  
+  @media (min-width: 40em) {
+    font-size: 2rem;
+  }
+}
+
+
+
+ 
+.content {
+  padding: 2em 0;
+}
+
+ .content section {
+   height: 60vh;
+   width: 100%;
+ }
+ 
+ .section_content {
+   width: 100%;
+   height: 50vh;
+   top: 0;
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+   padding: 1em;
+ }
+
+ .red2{
+  width: 70%;
+  font-size: .9em;
+  text-align: right;
+    padding: 5em;
+    position: absolute;
+    right: 0;
+    color: #ffffff;
+}
+
+.red3{
+  width: 70%;
+  text-align: left;
+  font-size: .9em;
+    padding: 5em;
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+
+ .section_content p {
+  width: 60%;
+ }
+
+ .r1 {
+  text-align: right;
+ }
+
+ .changes {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.changes p {
+  text-align: center;
+}
+
+.chg{
+  transition: all .3s ease-in-out;
+}
+
+.chg:hover {
+  color: black;
+  transform: scale(1);
+}
+
+.again {
+  font-family: "rollerscript-rough", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  margin: 2em;
+  transition: all .3s ease-in-out;
+}
+
+.again:hover {
+color: black;
+text-decoration: none;
+}
+
+
+.st0 {
+  stroke: rgb(227, 193, 191);
+  fill: none;
+  opacity: 50%;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 10px;
+  stroke-dashoffset: 10px;
+  transition: stroke-smooth 10s ease-in-out;
+}
+
+/* #my-path2 {
+  stroke: rgb(227, 193, 191);
+  opacity: 50%;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 10px;
+  stroke-dashoffset: 10px;
+  transition: stroke-smooth 10s ease-in-out;
+} */
+
+.svg2 {
+  position: absolute;
+}s
+
+#red {
+  background-image: url('http://www.w3.org/2000/svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* padding: 5em; */
+ }
+
+
+
+
+   /* === TABLET === */
+
+@media only screen and (max-width: 1300px) {
+
+  h5 {
+    font-size: 5em;
+  }
+
+  a.title {
+    font-size: 1.5em;
+  }
+
+    h1 {
+      font-size: 2em;
+      padding: 1em;
+    }
+
+    .red_fill {
+      padding: 0 1em 1em 20em;
+      font-size: .6em;
+    }
+
+    .text {
+    font-size: 1.3em;
+    }
+
+    #output {
+      font-size: .5em;
+      padding: 1em 4em;
+    }
+
+    /* #red1{
+        width: 60%;
+        padding: 0 4em;
+        color: #8b0820;
+    } */
+
+
+    .title {
+    font-size: .8em;
+    width: 70%;
+    padding: 1em;
+    font-family: "brevia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: all .3s ease-in-out;
+    color: white;
+    text-align: center;
+  }
+
+    
+    .center {
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #red_q1{
+        /* width: 100%;
+        padding: 10em; */
+        color: #ffffff;
+        text-align: right;
+        width: 50%;
+        padding: 2em;
+    }
+
+
+    button {
+        font-size: .8em;
+        color: white;
+        font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        background: none;
+        border-radius: 10px;
+        border: none;
+        padding: 6px;
+        transition: all .3s;
+    }
+    
+    button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      padding: 1em;
+      font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    .question {
+      width: 60%;
+    color:rgb(255, 255, 255);
+      text-align: left;
+      padding: 4em 8em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .question h2 {
+      font-size: 1.6em;
+      font-family: "rollerscript-rough", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .question div {
+      font-size: 1.2em;
+        font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(255, 255, 255);
+    padding: .3em;
+    transition: all .3s;
+    }
+
+    .question div:hover {
+      transform: scale(1.05);
+    }
+
+    .question a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    
+    #openMenu {
+        font-size: 1em;
+        position: absolute;
+        transition: all .2s;
+      }
+      
+      #openMenu:hover {
+        transform: scale(1.4);
+      }
+      
+      .overlay {
+        height: 0%;
+        width: 25%;
+        transition: all .01s;
+      }
+      
+      .overlay a {
+        padding: 0px;
+        font-size: .4em;
+      }
+      
+      .closebtn {
+        font-size: 20px;
+      }
+
+      .red_4 {
+        padding: 3em;
+      }
+
+      .red_4 div {
+        padding: 1em;
+      }
+
+ .content section {
+   height: 30vh;
+   width: 100%;
+ }
+ 
+ .section_content {
+   width: 100%;
+   height: 30vh;
+   top: 0;
+   padding: 1em;
+ }
+
+ .red2{
+  width: 70%;
+  font-size: .5em;
+  padding: 3em;
+}
+
+.red3{
+  width: 70%;
+  font-size: .5em;
+  padding: 3em;
+}
+
+ .section_content p {
+  width: 60%;
+ }
+
+ .changes {
+  height: 100vh;
+}
+
+
+}
+
+
+
+/* === CELL === */
+
+@media screen and (max-width: 700px) {
+
+  h5 {
+    font-size: 2em;
+  }
+
+  a.title {
+    font-size: .8em;
+  }
+
+  h1 {
+    width: 50%;
+    font-size: 1.5em;
+    padding: 1.5em;
+  }
+
+
+  .title {
+    font-size: .5em;
+    width: 80%;
+    padding: .5em;
+    font-family: "brevia", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: all .3s ease-in-out;
+    color: white;
+    text-align: center;
+  }
+
+
+  .cards {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+  }
+  
+
+  .cards img {
+    width: 60%;
+  }
+
+  button#gallery {
+    width: 100%;
+    margin: 0 auto 10px;
+    cursor: pointer;
+    padding: .5em;
+    font-size: 2em;
+    transition: all .3s ease-in-out;
+  }
+  
+  button#gallery:hover {
+    transform: scale(1.3);
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+    h1 {
+      width: 60%;
+      font-size: 2em;
+      padding: 1em;
+    }
+
+    
+    #button {
+      font-size: 2em;
+      padding: .5em;
+    }
+
+    .text {
+      background: none;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: solid 1px;
+      font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: #ffffff;
+    }
+
+    #output {
+      font-size: .9em;
+      padding: 1em 4em;
+      width: 70%;
+      color: #ffffff
+    }
+
+  .red_fill {
+    padding: 5em 1em 1em 25em;
+    font-size: .4em;
+  }
+
+  .text {
+  font-size: 1.3em;
+  }
+
+  #output {
+    font-size: .5em;
+    padding: 1em 4em;
+  }
+  
+  
+  #openMenu {
+      font-size: .9em;
+    }
+    
+    .overlay {
+      height: 0%;
+      width: 35%;
+      transition: all .01s;
+    }
+    
+    .overlay a {
+      padding: 0px;
+      font-size: 7px;
+      line-height: 1.5em;
+    }
+    
+    .closebtn {
+      font-size: 8px;
+      padding: 0;
+      top: 0;
+      right: 0;
+    }
+
+.content section {
+ height: 25vh;
+ width: 100%;
+}
+
+.section_content {
+ width: 100%;
+ height: 25vh;
+ top: 0;
+ padding: 1em;
+}
+
+.red2{
+width: 70%;
+font-size: .5em;
+padding: 3em;
+}
+
+.red3{
+width: 70%;
+font-size: .5em;
+padding: 3em;
+}
+
+.section_content p {
+width: 60%;
+}
+
+.changes {
+height: 100vh;
+}
+
+
+}
+
+
+ 
+
+ 
+
+
+ 
+ 

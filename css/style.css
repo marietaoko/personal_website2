@@ -175,6 +175,15 @@
   #exam {
     transition: all .6s;
   }
+
+  #exam a {
+    text-decoration: none;
+    transition: all .6s;
+  }
+
+  #exam a:hover {
+    transform: scale(1.2);
+  }
   
 .change {
     transform: scale(1.8) translateY(0) rotate(-360deg);
